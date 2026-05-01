@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お米農家 | 鹿児島県産ひのひかり・さつまゆきもち</title>
+  <title>Okome Nouka | 鹿児島県産ひのひかり・さつまゆきもち</title>
   <meta name="description" content="鹿児島県産のお米を丁寧に育てています。ひのひかり（新米）・さつまゆきもち（餅米）をご注文いただけます。">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
   <header id="header">
     <div class="container header-inner">
       <div class="site-logo">
-        <a href="#top">🌾 お米農家</a>
+        <a href="#top">Okome Nouka</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
         <span></span><span></span><span></span>
@@ -48,39 +48,59 @@
     <div class="container">
       <h2 class="section-title">商品紹介</h2>
       <p class="section-lead">鹿児島県産の自慢のお米をお届けします</p>
+
+      <!-- 在庫案内 -->
+      <p class="stock-notice">在庫状況は<a href="https://www.instagram.com/okome.nouka2" target="_blank" rel="noopener noreferrer">Instagram</a>でご確認ください。</p>
+
       <div class="products-grid">
 
-        <!-- ひのひかり -->
+        <!-- さつまゆきもち 2kg -->
         <div class="product-card">
-          <div class="product-image product-image--hinohikari">
-            <span class="product-badge">新米</span>
+          <div class="product-image product-image--yukimochi2">
+            <img src="images/satsumayukimochi-2kg.png" alt="さつまゆきもち2kg">
+            <span class="product-badge product-badge--green">在庫あり</span>
           </div>
           <div class="product-body">
-            <h3 class="product-name">ひのひかり</h3>
-            <p class="product-origin">鹿児島県産</p>
-            <p class="product-desc">
-              鹿児島の豊かな自然の中で丁寧に育てたひのひかり。
-              甘みと粘りのバランスが良く、ふっくらとした炊きあがりが自慢です。
-              毎日の食卓にぴったりの一粒です。
-            </p>
+            <h3 class="product-name">さつまゆきもち</h3>
+            <p class="product-origin">鹿児島県産 / 餅米</p>
+            <p class="product-volume">袋込み2kg・実質約1.5〜1.8kg（一升目安）</p>
+            <p class="product-price">¥2,280 <span class="price-note">税込・送料込</span></p>
+            <p class="product-note">※袋・梱包材込みの重量で計量しています。実質のもち米量は約1.5〜1.8kg（一升目安）です。</p>
             <a href="#contact" class="btn-secondary">注文・お問い合わせ</a>
           </div>
         </div>
 
-        <!-- さつまゆきもち -->
+        <!-- さつまゆきもち 5kg -->
         <div class="product-card">
-          <div class="product-image product-image--yukimochi">
-            <span class="product-badge product-badge--mochi">餅米</span>
+          <div class="product-image product-image--yukimochi5">
+            <img src="images/satsumayukimochi-5kg.png" alt="さつまゆきもち5kg">
+            <span class="product-badge product-badge--green">在庫あり</span>
           </div>
           <div class="product-body">
             <h3 class="product-name">さつまゆきもち</h3>
-            <p class="product-origin">鹿児島県産</p>
-            <p class="product-desc">
-              鹿児島県発祥の希少な餅米品種、さつまゆきもち。
-              もちもちとした食感と豊かな風味が特長で、
-              お餅・おこわ・赤飯など、特別な日の食卓を彩ります。
-            </p>
+            <p class="product-origin">鹿児島県産 / 餅米</p>
+            <p class="product-volume">袋込み5kg・実質約4.6kg</p>
+            <p class="product-price">¥5,280 <span class="price-note">税込・送料込</span></p>
+            <p class="product-note">※袋・梱包材込みの重量で計量しています。実質のもち米量は約4.6kgです。価格はもち米1kg＝¥1,000で算出しています。</p>
             <a href="#contact" class="btn-secondary">注文・お問い合わせ</a>
+          </div>
+        </div>
+
+        <!-- ひのひかり 10kg -->
+        <div class="product-card">
+          <div class="product-image product-image--hinohikari">
+            <img src="images/hinohikari-10kg.png" alt="鹿児島県産ひのひかり10kg">
+            <div class="product-badges">
+              <span class="product-badge product-badge--orange">2026年新米｜10月下旬発売予定</span>
+              <span class="product-badge product-badge--red">20名限定</span>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">ひのひかり</h3>
+            <p class="product-origin">鹿児島県産 / 新米</p>
+            <p class="product-volume">箱込み10kg・実質約9.4kg</p>
+            <p class="product-price">¥9,980〜 <span class="price-note">地域別送料あり</span></p>
+            <a href="#contact" class="btn-secondary">予約・お問い合わせ</a>
           </div>
         </div>
 
@@ -88,38 +108,77 @@
     </div>
   </section>
 
+  <!-- 送料について -->
+  <section id="shipping" class="section section--bg">
+    <div class="container">
+      <h2 class="section-title">送料について</h2>
+      <div class="shipping-body">
+        <p>九州全域（鹿児島・熊本・宮崎・福岡・佐賀・長崎・大分）は<strong>送料無料</strong>です。</p>
+        <p>九州以外のお客様は地域別の追加送料がかかります。</p>
+        <p>配送はAZ佐川急便を利用しています。</p>
+
+        <details class="shipping-details">
+          <summary>地域別送料一覧を見る</summary>
+          <div class="shipping-table-wrap">
+            <table class="shipping-table">
+              <thead>
+                <tr>
+                  <th>地域</th>
+                  <th>都道府県</th>
+                  <th>2kg 追加</th>
+                  <th>5kg 追加</th>
+                  <th>10kg 追加</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>中国</td><td>鳥取・島根・岡山・広島・山口</td><td>+¥170</td><td>+¥110</td><td>+¥20</td></tr>
+                <tr><td>北陸</td><td>富山・石川・福井</td><td>+¥190</td><td>+¥150</td><td>+¥70</td></tr>
+                <tr><td>四国</td><td>徳島・香川・愛媛・高知</td><td>+¥220</td><td>+¥160</td><td>+¥80</td></tr>
+                <tr><td>関西</td><td>滋賀・京都・大阪・兵庫・奈良・和歌山</td><td>+¥220</td><td>+¥160</td><td>+¥80</td></tr>
+                <tr><td>東海</td><td>岐阜・静岡・愛知・三重</td><td>+¥190</td><td>+¥260</td><td>+¥120</td></tr>
+                <tr><td>信越</td><td>新潟・長野</td><td>+¥270</td><td>+¥260</td><td>+¥120</td></tr>
+                <tr><td>関東</td><td>茨城・栃木・群馬・埼玉・千葉・東京・神奈川・山梨</td><td>+¥370</td><td>+¥360</td><td>+¥220</td></tr>
+                <tr><td>南東北</td><td>宮城・山形・福島</td><td>+¥430</td><td>+¥470</td><td>+¥340</td></tr>
+                <tr><td>北東北</td><td>青森・岩手・秋田</td><td>+¥490</td><td>+¥530</td><td>+¥440</td></tr>
+                <tr><td>北海道</td><td>北海道</td><td>+¥650</td><td>+¥690</td><td>+¥540</td></tr>
+                <tr><td>沖縄</td><td>沖縄</td><td>+¥1,180</td><td>+¥730</td><td>+¥870</td></tr>
+                <tr><td>離島</td><td>—</td><td>+¥450</td><td>+¥450</td><td>+¥450</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- こだわり -->
-  <section id="commitment" class="section section--bg">
+  <section id="commitment" class="section">
     <div class="container">
       <h2 class="section-title">農家のこだわり</h2>
       <p class="section-lead">鹿児島の大地と向き合い、一粒一粒を丁寧に</p>
       <div class="commitment-grid">
         <div class="commitment-item">
-          <div class="commitment-icon">🌿</div>
-          <h3>鹿児島県産にこだわる</h3>
-          <p>豊かな日照と清らかな水に恵まれた鹿児島の土地で、代々受け継いできた農法でお米を育てています。地元の気候と風土がおいしさの源です。</p>
+          <h3>鹿児島の土で育てる</h3>
+          <p>代々受け継いできた田んぼで、今年もお米を育てています。鹿児島の日照と水が、おいしさの土台です。</p>
         </div>
         <div class="commitment-item">
-          <div class="commitment-icon">💧</div>
-          <h3>水と土を大切に</h3>
-          <p>田んぼの水管理と土づくりに特にこだわっています。良い土から良い米が生まれる。そう信じて、毎年丁寧に田んぼと向き合っています。</p>
+          <h3>土づくりから始まる</h3>
+          <p>草を取り、土を調整して、田植えの準備を整える。毎年同じ作業の繰り返しが、良いお米につながります。</p>
         </div>
         <div class="commitment-item">
-          <div class="commitment-icon">☀️</div>
-          <h3>自然の恵みを活かして</h3>
-          <p>鹿児島の豊富な太陽の光をたっぷり浴びて育ったお米は、甘みと旨みが違います。自然の力を最大限に活かした栽培を心がけています。</p>
+          <h3>家族みんなで作っています</h3>
+          <p>じーじ・ばーばを中心に、家族で力を合わせて育てています。一粒一粒に、みんなの手が入っています。</p>
         </div>
         <div class="commitment-item">
-          <div class="commitment-icon">🏡</div>
           <h3>農家から直接お届け</h3>
-          <p>収穫したお米を農家直送でお届けします。中間流通を省くことで、新鮮なお米をできるだけお手頃な価格でご提供できるよう努めています。</p>
+          <p>新米の味を、一人でも多くの家庭へ。農家直送だからこそ、収穫したてのおいしさをそのままお届けできます。</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 注文方法 -->
-  <section id="order" class="section">
+  <section id="order" class="section section--bg">
     <div class="container">
       <h2 class="section-title">ご注文方法</h2>
       <p class="section-lead">お気軽にお問い合わせください</p>
@@ -142,8 +201,8 @@
     </div>
   </section>
 
-  <!-- お問い合わせフォーム（Netlify Forms） -->
-  <section id="contact" class="section section--bg">
+  <!-- お問い合わせフォーム -->
+  <section id="contact" class="section">
     <div class="container">
       <h2 class="section-title">お問い合わせ</h2>
       <p class="section-lead">ご注文・ご質問はこちらのフォームからどうぞ</p>
@@ -155,8 +214,8 @@
         id="contactForm"
       >
         <input type="hidden" name="access_key" value="ffad04dd-6938-49cb-a57f-b4cf118c33c9">
-        <input type="hidden" name="subject" value="【お米農家HP】お問い合わせが届きました">
-        <input type="hidden" name="from_name" value="お米農家HP">
+        <input type="hidden" name="subject" value="【Okome Nouka HP】お問い合わせが届きました">
+        <input type="hidden" name="from_name" value="Okome Nouka HP">
         <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
 
         <div class="form-group">
@@ -173,11 +232,11 @@
           <label for="inquiry_type">お問い合わせ種別</label>
           <select id="inquiry_type" name="inquiry_type">
             <option value="">選択してください</option>
-            <option value="ひのひかり注文">ひのひかり（新米）の注文</option>
-            <option value="さつまゆきもち注文">さつまゆきもち（餅米）の注文</option>
-            <option value="両方注文">両方の注文</option>
-            <option value="価格・送料確認">価格・送料について</option>
-            <option value="その他">その他のご質問</option>
+            <option value="ひのひかり10kg（予約）">ひのひかり10kg（予約）</option>
+            <option value="さつまゆきもち2kg">さつまゆきもち2kg</option>
+            <option value="さつまゆきもち5kg">さつまゆきもち5kg</option>
+            <option value="価格・送料確認">価格・送料確認</option>
+            <option value="その他">その他</option>
           </select>
         </div>
 
@@ -200,7 +259,7 @@
   </section>
 
   <!-- Instagram フィード -->
-  <section id="instagram" class="section">
+  <section id="instagram" class="section section--bg">
     <div class="container">
       <h2 class="section-title">Instagram</h2>
       <p class="section-lead">最新の農場の様子をInstagramで発信しています</p>
@@ -223,14 +282,14 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-logo">🌾 お米農家</div>
+        <div class="footer-logo">Okome Nouka</div>
         <p class="footer-tagline">鹿児島県産 ひのひかり・さつまゆきもち</p>
         <div class="footer-sns">
           <a href="https://www.instagram.com/okome.nouka2" target="_blank" rel="noopener noreferrer" class="footer-instagram">
             📷 Instagram @okome.nouka2
           </a>
         </div>
-        <p class="footer-copy">&copy; 2025 お米農家. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2025 Okome Nouka. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -297,7 +356,7 @@
           formResult.style.display = 'block';
           formResult.style.background = '#e8f5e9';
           formResult.style.color = '#2e7d32';
-          formResult.textContent = '✅ 送信が完了しました！2〜3営業日以内にご返信します。';
+          formResult.textContent = '送信が完了しました！2〜3営業日以内にご返信します。';
           contactForm.reset();
         } else {
           throw new Error(data.message || '送信エラー');
@@ -306,7 +365,7 @@
         formResult.style.display = 'block';
         formResult.style.background = '#ffebee';
         formResult.style.color = '#c62828';
-        formResult.textContent = '❌ 送信に失敗しました。インスタグラムDMからお問い合わせください。';
+        formResult.textContent = '送信に失敗しました。インスタグラムDMからお問い合わせください。';
       } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = '送信する';
